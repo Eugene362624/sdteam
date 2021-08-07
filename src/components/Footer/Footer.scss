@@ -4,8 +4,27 @@ footer {
     background: #FFCA54;
     padding: 5rem 10rem;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-left, .footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 650px;
+    }
 }
 
 .footer-up {
