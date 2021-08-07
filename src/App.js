@@ -8,6 +8,7 @@ import Stack from "./components/Stack/Stack";
 import Services from "./components/Services/Services";
 
 function App() {
+
   document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('#promo').style.cssText = `animation: fade-in .7s ease`
       document.querySelector('.intro > .intro-left > .left-content > p').style.cssText = `animation: fade-in .7s ease; animation-delay: .5s;`
@@ -15,6 +16,7 @@ function App() {
       document.querySelector('.intro > .intro-left > .left-content > #read-more').style.cssText = `animation: fade-in .7s ease; animation-delay: 1s;`
       setTimeout(() => document.querySelector('.intro > .intro-left > .left-content > #read-more').style.cssText = 'opacity:1', 1700)
       document.querySelector('.intro > .intro-right > img').style.cssText = `animation: fadeSW 2.5s ease`
+      document.querySelector('#dog').addEventListener('click', () => alert("Гав-гав!"))
 
   })
 
@@ -41,8 +43,10 @@ function App() {
       setTimeout(() => document.querySelector('.num-3').style.cssText = 'opacity: 1', 700)
     }
   }  
+
   return (
     <div className="App">
+      
       <Header/>
       <Intro/>
       <About/>
