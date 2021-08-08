@@ -9,7 +9,7 @@ function Header() {
                 <button onClick={() => window.scrollTo({top: document.querySelector('.about').offsetTop, behavior: 'smooth'})}>О компании</button>
                 <button onClick={() => window.scrollTo({top: document.querySelector('.projects').offsetTop-100, behavior: 'smooth'})}>Портфолио</button>
                 <button onClick={() => window.scrollTo({top: document.querySelector('.services').offsetTop, behavior: 'smooth'})}>Услуги</button>
-                <button>Блог</button>
+                <button>Личный кабинет</button>
             </nav>
             <button id='order'>Заказать сайт</button>
         </header>
