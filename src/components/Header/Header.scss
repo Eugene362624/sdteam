@@ -37,3 +37,22 @@ header {
         }
     }
 }
+
+@media (max-width: 992px) {
+    header {
+        height: fit-content;
+        backdrop-filter: none;
+        background: none;
+        padding: 0 .5rem;
+        img {
+            height: 40px;
+            margin-top: .5rem;
+        }
+        nav {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+    }
+}

@@ -16,6 +16,7 @@
     max-height: 100%;
     .left-content {
         display: flex;
+        padding-bottom: 3rem;
         flex-direction: column;
         justify-content: center;
         p {
@@ -49,7 +50,89 @@
     // background-position-x: center;
     // background-image: url('http://localhost:3000/Saly-1.png');
     transform: scaleX(-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     img {
         max-width: 650px;
+        width: 45vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro-left {
+        padding-left: 5rem;
+        .left-content {
+            #promo {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .intro {
+        height: 100vh;
+        padding: 0;
+        background-image: url('http://localhost:3000/Saly-1.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .intro-right {
+        display: none;
+    }
+    .intro-left {
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        backdrop-filter: blur(15px);
+        .left-content {
+            #promo {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-left {
+        padding: 0 3rem;
+        .left-content {
+            #promo {
+                font-size: 2rem;
+            }
+            button {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        height: 100vh;
+    }
+    .intro-left {
+        padding: 0 1rem;
+        .left-content {
+            #promo {
+                font-size: 1.8rem;
+            }
+            p {
+                margin: 1.5rem 0;
+            }
+            button {
+                margin: 0 auto;
+                display: block;
+            }
+        }
     }
 }

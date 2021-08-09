@@ -18,7 +18,8 @@ function Services() {
                     <div className="service-left">
                         <h3>Разработка</h3>
                         <h4>От интерфейсной разработки до серверной бизнес-логики</h4>
-                        <p>Вам нужно разработать сайт?</p>
+                        <p>Обеспечим Вас поддержкой и сделаем всё качественно по минимальной стоимости</p>
+                        <button id='show-more'>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
                         <img src="./Saly-13.png" alt="" />
@@ -26,9 +27,10 @@ function Services() {
                 </div>
                 <div className="service">
                     <div className="service-left">
-                        <h3>Разработка</h3>
-                        <h4>От интерфейсной разработки до серверной бизнес-логики</h4>
-                        <p>Вам нужно разработать сайт?</p>
+                        <h3>Дизайн</h3>
+                        <h4>Красивый и функциональный</h4>
+                        <p>Разработаем интересный и удобный для Ваших клиентов дизайн</p>
+                        <button id='show-more'>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
                         <img src="./Saly-23.png" alt="" />
@@ -36,9 +38,10 @@ function Services() {
                 </div>
                 <div className="service">
                     <div className="service-left">
-                        <h3>Разработка</h3>
-                        <h4>От интерфейсной разработки до серверной бизнес-логики</h4>
-                        <p>Вам нужно разработать сайт?</p>
+                        <h3>SEO-Продвижение</h3>
+                        <h4>Для хорошего старта</h4>
+                        <p>Выведем Ваш сайт выше в поисковиках, чтобы вы могли конкурировать с сильными соперниками</p>
+                        <button>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
                         <img src="./Saly-12.png" alt="" />

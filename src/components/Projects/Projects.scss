@@ -71,3 +71,104 @@
         }
     }
 }
+
+@media (max-width:1200px) {
+    .project {
+        height: 380px !important;
+        .project-image {
+            picture, img {
+                width: 500px;
+                height: 380px;
+            }
+        }
+        .project-description {
+            width: auto;
+            padding: 1rem 0 1rem 2rem ;
+            &:nth-child(1) {
+                padding: 1rem 2rem 1rem 0;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .projects {
+        padding: 1.5rem 3rem;
+        .projects-label {
+            margin-bottom: 2rem;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+    .project {
+        margin-bottom: 4rem !important;
+        height: 330px !important;
+        &:last-child {
+            margin-bottom: 2rem !important;
+        }
+        .project-image {
+            picture, img {
+                width: 450px;
+                height: 330px;
+            }
+        }
+        .project-description {
+            width: auto;
+            padding: 1rem 0 1rem 2rem ;
+            &:nth-child(1) {
+                padding: 1rem 2rem 1rem 0;
+            }
+            .project-title {
+                font-size: 1.5rem;    
+            }
+            .project-briefly {
+                font-size: .9rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        height: fit-content !important;
+    }
+    .num-2 {
+        flex-direction: column-reverse !important;
+    }
+    .project-description {
+        padding: 0 !important;
+        margin-top: 2rem;
+        .show-more {
+            margin-top: 2rem !important;
+            margin-left: auto;
+        }
+        
+    }
+    .project-image {
+        picture {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .projects {
+        padding: 1rem;
+        .projects-label {
+            span {
+                font-size: 1.7rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .project-image {
+        picture, img {
+            width: 100% !important;
+            height:  300px !important;
+        }
+    }
+}
