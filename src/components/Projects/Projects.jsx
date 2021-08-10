@@ -9,7 +9,7 @@ function Projects() {
             </div>
             <div className="project num-1">
                 <div className="project-image">
-                    <picture><img src="./customgang.png" alt="" /></picture>
+                    <picture><img src="./customgang.png" alt="Первый проект" /></picture>
                 </div>
                 <div className="project-description">
                     <div className="project-info">
@@ -42,12 +42,12 @@ function Projects() {
                     <button className="show-more">Узнать больше</button>
                 </div>
                 <div className="project-image">
-                <picture><img src="./customgang.png" alt="" /></picture>
+                <picture><img src="./customgang.png" alt="Второй проект" /></picture>
                 </div>
             </div>
             <div className="project num-3">
                 <div className="project-image">
-                <picture><img src="./customgang.png" alt="" /></picture>
+                <picture><img src="./customgang.png" alt="Третий проект" /></picture>
                 </div>
                 <div className="project-description">
                     <div className="project-info">

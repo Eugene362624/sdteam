@@ -14,7 +14,7 @@ function Intro() {
                 </div>
             </div>
             <div className="intro-right">
-        <img src="./Saly-1.png" alt="" />
+        <img src="./Saly-1.png" alt="Девочка на ракете" />
             </div>
         </div>
     )

@@ -32,7 +32,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-right">
-                <img id="dog" src="./Saly-18.png" alt="" />
+                <img id="dog" src="./Saly-18.png" alt="Нижнее лого" />
             </div>
         </footer>
     )

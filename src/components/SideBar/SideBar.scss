@@ -1,65 +1,74 @@
 .sidebar {
+    display: none;
     position: fixed;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    bottom: 0px;
+    z-index: 100500;
+}
+
+.sidebar-checkbox {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    height: 100px;
     width: 100px;
-    left: -200px;
-    transition: left 1s ease;
-    background: #F36A3E;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        button{
-            display: flex;
-            color: white;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid #d35328;
-            font-size: larger;
-            margin: 0;
-            width: 100px;
-            height: 100px;
-            border-radius: 0;
-            span {
-                display: flex;
-                flex-direction: column;
-            }
-            small {
-                font-size: .5rem;
-                margin-top: .3rem;
+    align-items: center;
+
+    button {
+        background: white;
+        display: block;
+        margin: auto;
+        &:hover {
+            background: rgba(255, 255, 255, 0.644);
+        }
+        span:first-child {
+            svg {
+                fill: #494949;
             }
         }
     }
+}
 
-    ul#sidebar-bottom {
+.sidebar-body {
+    border-radius: 60px 0 0 0;
+    height: 50vh;
+    width: 100px;
+    bottom: -50vh;
+    right: 0;
+    transition: bottom 1s ease;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    display: flex;
+    .sidebar-buttons {
+        padding: 1.5rem 0;
+        max-width: 500px;
+        width: 100%;
+        height: calc(50vh - 100px);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        li {
-            list-style: none;
-        }
         button {
-            background: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            color: white;
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            &:hover {
-                transition: all .5s ease;
-                background: white;
-                color: black;
-            }
+            font-size: .6rem;
+            height: 60px;
+            width: 60px !important;
+            padding: 0 !important;
+            min-width: 50px;
+            span:first-child {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                }
         }
-        
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: flex;
     }
 }

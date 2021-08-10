@@ -1,16 +1,16 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import Projects from "./components/Projects/Projects";
-import SideBar from "./components/SideBar/SideBar";
-import Stack from "./components/Stack/Stack";
 import Services from "./components/Services/Services";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
-
   document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('#promo').style.cssText = `animation: fade-in .7s ease`
+      document.querySelector('#promo').style.cssText = `animation: fade-in .7s ease`
       document.querySelector('.intro > .intro-left > .left-content > p').style.cssText = `animation: fade-in .7s ease; animation-delay: .5s;`
       setTimeout(() => document.querySelector('.intro > .intro-left > .left-content > p').style.cssText = 'opacity:1', 1200)
       document.querySelector('.intro > .intro-left > .left-content > #read-more').style.cssText = `animation: fade-in .7s ease; animation-delay: 1s;`
@@ -51,14 +51,13 @@ function App() {
 
   return (
     <div className="App">
-      
       <Header/>
       <Intro/>
       <About/>
-      {/* <Stack/> */}
       <Projects/>
       <Services/>
       <Footer/>
+      <SideBar/>
     </div>
   );
 }

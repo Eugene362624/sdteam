@@ -22,7 +22,7 @@ function Services() {
                         <button id='show-more'>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
-                        <img src="./Saly-13.png" alt="" />
+                        <img src="./Saly-13.png" alt="Программирование" />
                     </div>
                 </div>
                 <div className="service">
@@ -33,7 +33,7 @@ function Services() {
                         <button id='show-more'>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
-                        <img src="./Saly-23.png" alt="" />
+                        <img src="./Saly-23.png" alt="Дизайн" />
                     </div>
                 </div>
                 <div className="service">
@@ -44,7 +44,7 @@ function Services() {
                         <button>Узнать подробнее</button>
                     </div>
                     <div className="service-right">
-                        <img src="./Saly-12.png" alt="" />
+                        <img src="./Saly-12.png" alt="СЕО продвижение" />
                     </div>
                 </div>
             </Slider>
