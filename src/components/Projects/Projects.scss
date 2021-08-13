@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: flex-start;
         &:nth-child(1) {
-            padding: 4rem 8rem 4rem 0;
+            padding: 4rem 8rem 4rem 4rem;
         }
         .project-type {
             color: #1951bb;
@@ -78,6 +78,7 @@
 @media (max-width:1200px) {
     .project {
         height: 380px !important;
+        justify-content: space-between;
         .project-image {
             picture, img {
                 width: 500px;
@@ -86,9 +87,9 @@
         }
         .project-description {
             width: auto;
-            padding: 1rem 0 1rem 2rem ;
+            padding: 1rem 1rem 1rem 2rem ;
             &:nth-child(1) {
-                padding: 1rem 2rem 1rem 0;
+                padding: 1rem 2rem 1rem 1rem;
             }
         }
 
