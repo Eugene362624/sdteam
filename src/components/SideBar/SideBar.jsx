@@ -11,8 +11,8 @@ function SideBar() {
     const [leftSide, setLeftSide] = useState(Cookie.get('leftSide') || false)
 
     
-
     useEffect(() => {
+        document.querySelector('.sidebar-body').style.cssText += `bottom: -${document.querySelector('.sidebar-body').scrollHeight}px`
         if (leftSide) {
             document.querySelector('.sidebar-body').style.cssText += "left: 0; border-radius: 0 60px 0 0; right: unset"
             document.querySelector('.sidebar-checkbox').style.cssText += "left: 0; right: unset"
@@ -25,7 +25,7 @@ function SideBar() {
     const sidebarHandler = () => {
         if (document.querySelector('.sidebar-body').classList.contains('expanded')) {
             setExpanded(false)
-            document.querySelector('.sidebar-body').style.cssText += "bottom: -50vh"
+            document.querySelector('.sidebar-body').style.cssText += `bottom: -${document.querySelector('.sidebar-body').scrollHeight}px`
             document.querySelector('.sidebar-body').classList.remove('expanded')
         }
         else {
