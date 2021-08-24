@@ -1,9 +1,8 @@
 import { Button } from '@material-ui/core'
-import React from 'react'
+import React, { forwardRef } from 'react'
 import "./Intro.scss"
 
-function Intro() {
-
+const Intro = () => {
     return (
         <div className="intro">
             <div className="intro-left">

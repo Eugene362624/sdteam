@@ -1,3 +1,13 @@
+@keyframes fade-in {
+    0% { 
+        opacity: 0;
+        transform: translateY(20px);
+     }   
+    100% { 
+        opacity: 1; 
+        transform: translateY(0px);
+    }
+}
 .projects {
     padding: 5rem 5rem;
     width: 100%;
@@ -8,11 +18,17 @@
         font-weight: 900;
         margin-bottom: 5rem;
     }
+    .num-2 {
+        flex-direction: row-reverse;
+    }
+    .option-enter-done {
+        animation: fade-in 1s ease;
+    }
     .project {
         background: white;
         padding: 1rem;
         border-radius: 20px;
-        opacity: 0;
+        opacity: 1;
         width: 100%;
         display: flex;
         height: fit-content !important;
@@ -20,6 +36,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+        
+    }
+    div > .project.num-2 > .project-description {
+        padding: 4rem 8rem 4rem 4rem;
     }
     .project-description {
         width: calc(100% - 570px);
@@ -28,9 +48,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        &:nth-child(1) {
-            padding: 4rem 8rem 4rem 4rem;
-        }
         .project-type {
             color: #1951bb;
         }
@@ -88,11 +105,10 @@
         .project-description {
             width: auto;
             padding: 1rem 1rem 1rem 2rem ;
-            &:nth-child(1) {
-                padding: 1rem 2rem 1rem 1rem;
-            }
         }
-
+    }
+    .projects > div> .project.num-2 > .project-description {
+        padding: 1rem 2rem 1rem 1rem;
     }
 }
 
@@ -141,21 +157,20 @@
         height: fit-content !important;
     }
     .num-2 {
-        flex-direction: column-reverse !important;
+        flex-direction: column !important;
     }
     .project-description {
         padding: 0 !important;
         margin-top: 2rem;
-        .show-more {
-            margin-top: 2rem !important;
-            margin-left: auto;
-        }
-        
     }
     .project-image {
         picture {
             margin: 0 auto;
         }
+    }
+    .projects > div > .project > a >.show-more {
+        margin-top: 2rem !important;
+        margin-left: auto;
     }
 }
 

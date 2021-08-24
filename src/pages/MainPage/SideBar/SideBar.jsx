@@ -3,6 +3,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MenuIcon from '@material-ui/icons/Menu';
 import React, { useEffect, useState } from 'react'
 import Cookie from 'js-cookie'
+import CloseIcon from '@material-ui/icons/Close';
 import './SideBar.scss'
 
 function SideBar() {
@@ -53,7 +54,7 @@ function SideBar() {
         <div className="sidebar">
             <div className="sidebar-checkbox">
                 <IconButton onClick={() => sidebarHandler()}>
-                    {expanded ? <ExpandMoreIcon/> : <MenuIcon/>}
+                    {expanded ? <CloseIcon/> : <MenuIcon/>}
                 </IconButton>
             </div>
             <div className="sidebar-body">

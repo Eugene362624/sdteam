@@ -19,20 +19,20 @@ function Footer() {
                         <div className="follow-us">
                             <h2>Следите за нами</h2>
                             <div className="follow-us--links">
-                                <a href=""><img src='./vk.svg'></img></a>
-                                <a href=""><img src='./instagram.svg'></img></a>
-                                <a href=""><img src='./youtube.svg'></img></a>
+                                <a href=""><img src='.././vk.svg'></img></a>
+                                <a href=""><img src='.././instagram.svg'></img></a>
+                                <a href=""><img src='.././youtube.svg'></img></a>
                             </div>
                         </div>
                     </div>
                     <div className="footer-down">
-                        <img src='./bottomLogo.svg'></img>
+                        <img src='.././bottomLogo.svg'></img>
                         <span>2021 &copy; SDTeam Студия веб-разработки. Все права защищены.</span>
                     </div>
                 </div>
             </div>
             <div className="footer-right">
-                <img id="dog" src="./Saly-18.png" alt="Нижнее лого" />
+                <img id="dog" src=".././Saly-18.png" alt="Нижнее лого" />
             </div>
         </footer>
     )
